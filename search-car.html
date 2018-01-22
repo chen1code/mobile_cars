@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>搜车</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	</head>
+     
+	<body>
+		<div id="wrap">
+			<section class="search-list">
+				<header class="head">
+					<!--<a class="headL"><img src="img/position.png"><span>南京</span></a>-->
+					<div class="headC"><input type="text" placeholder="颜色/车系/品牌"></div>
+					<a class="headR">重置</a>
+				</header>
+				<section class="filter">
+                    <a class="pifa">批发价<div class="kuang"><img src="img/duigou.png" /></div></a>
+                    <a>品牌</a>
+                    <a>价格</a>
+                    <a>更多</a>
+				</section>
+			</section>
+			<section class="car-list">
+				<ul>
+					<li>
+						<p><img src="img/tx-test.jpg">威迩卡斯二手车行</p>
+						<a href="car-detail.html">
+						<div class="clist-left"><img src="img/carpic1.jpg"></div>
+						<h3>一汽-大众CC 2015款 2.0TSI 豪华型</h3>
+						<p class="car-info"><span>0.17万公里/2015年9月</span><span>南京</span></p>
+						<p class="car-price"><span>30万元</span><span>保</span><span>保险到期：1年零6月</span></p>
+					</a></li>
+					<li>
+						<p><img src="img/tx-test.jpg">倍儿牛二手车行</p>
+						<a href="car-detail.html">
+						<div class="clist-left"><img src="img/carpic2.jpg"></div>
+						<h3>一汽-大众CC 2015款 2.0TSI 豪华型</h3>
+						<p class="car-info"><span>2.95万公里/2015年9月</span><span>南京</span></p>
+						<p class="car-price"><span>28.98万元</span><span>保</span></p>
+					</a></li>
+					<li>
+						<p><img src="img/tx-test.jpg">赵先生</p>
+						<a href="car-detail.html">
+						<div class="clist-left"><img src="img/carpic3.jpg"></div>
+						<h3>迈腾 2013款 2.0TSI 至尊型</h3>
+						<p class="car-info"><span>9.99万公里/2015年1月</span><span>南京</span></p>
+						<p class="car-price"><span>28.98万元</span><span>保</span></p>
+					</a></li>
+				</ul>
+			</section>
+			<section class="filter-detail hide">
+				
+			</section>
+			<section class="filter-detail hide">
+				<ul>
+					<li>不限</li>
+					<li>1万元以内</li>
+					<li>1-2万元</li>
+					<li>2-3万元</li>
+					<li>3-5万元</li>
+					<li>5-8万元</li>
+					<li>8-12万元</li>
+					<li>12-18万元</li>
+					<li>18-24万元</li>
+					<li>24-40万元</li>
+					<li>40万元以上</li>
+					<div class="user-defined">自定义(万元): <input type="text" /> - <input type="text" /><span class="btn-qd">确定</span></div>
+				</ul>
+			</section>
+		    <section class="filter-detail more-filter hide">
+				<ul>
+					<li class="group-head">
+						车龄
+						<span class="right-content"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>不限</li>
+							<li>1年以内</li>
+							<li>1-3年</li>
+							<li>3-5年</li>
+							<li>5-8年</li>
+							<li>8-10年</li>
+							<li>10年以上</li>
+						</ul>
+					</section>
+					<li class="group-head">
+						国标
+						<span class="right-content"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>不限</li>
+							<li>国一</li>
+							<li>国二</li>
+							<li>国三</li>
+							<li>国四</li>
+							<li>国五</li>
+							<li>欧三</li>
+							<li>欧四</li>
+							<li>欧五</li>
+						</ul>
+					</section>
+					<li class="group-head">
+						颜色
+						<span class="right-content"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>不限</li>
+							<li>黑色</li>
+							<li>白色</li>
+							<li>红色</li>
+							<li>蓝色</li>
+							<li>银灰色</li>
+							<li>深灰色</li>
+							<li>绿色</li>
+							<li>蓝色</li>
+							<li>橙色</li>
+							<li>咖啡色</li>
+							<li>紫色</li>
+						</ul>
+					</section>
+					<li class="group-head">
+						变速箱
+						<span class="right-content"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>不限</li>
+							<li>其它</li>
+							<li>手动挡</li>
+							<li>自动挡</li>
+							<li>手自一体</li>
+							<li>无级变速</li>
+						</ul>
+					</section>
+				</ul>
+				<div class="foot-qdqx">
+					<div class="foot-qdqx-item1 ">确定</div>
+					<div class="foot-qdqx-item2 qx">取消</div>
+				</div>
+			</section>
+		</div>
+		<!--返回顶部按钮-->
+		<a class="back-top hide" href="#"><img src="img/back-top.png"></a>
+		<!--foot-->
+		<div class="foot-tc"></div>
+		<div class="foot">
+			<a class="first-page" href="index.html"><b></b>
+				<p>首页</p>
+			</a>
+			<a class="search-car active" href="search-car.html"><b class="active"></b>
+				<p>搜车</p>
+			</a>
+			<a class="message" href="message.html"><b></b>
+				<p>消息</p>
+			</a>
+			<a class="mine" href="myCenter.html"><b></b>
+				<p>我的</p>
+			</a>
+		</div>
+	</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

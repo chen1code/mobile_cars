@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>全网求购</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	</head>
+	<style>
+	.foot{ background-color: #F6F6F6; line-height: 3rem; text-align: center;}
+	</style>
+	<body>
+		<div id="wrap">
+			<header class="head">
+				<a class="headL" href="index.html"><img src="img/arrow-left.png"></a>
+				<div class="headC"><span>全网求购</span></div>
+				<!--<a class="headR"><img src="img/position.png" width="20px" height="20px" >南京</a>-->
+			</header>
+			<section class="common-list">
+				<ul>
+					<li class="group-head">
+						期望车型
+					</li>
+					<li class="group-head">
+						心理价位
+						<span class="rightSpan"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>不限</li>
+							<li>1万元以内</li>
+							<li>1-2万</li>
+							<li>2-3万</li>
+							<li>3-5万</li>
+							<li>5-8万</li>
+							<li>8-12万</li>
+							<li>12-18万</li>
+							<li>18-24万</li>
+							<li>24-40万</li>
+							<li>40万以上</li>
+							<div class="user-defined">自定义(万元): <input type="text" /> - <input type="text" /><span class="btn-qd">确定</span></div>
+						</ul>
+					</section>
+					<li class="group-head">
+						车龄
+						<span class="rightSpan"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>不限</li>
+							<li>1年以内</li>
+							<li>1-3年</li>
+							<li>3-5年</li>
+							<li>5年以上</li>
+						</ul>
+					</section>
+					<li class="group-head">
+						所在城市
+						<span class="rightSpan">南京</span>
+					</li>
+				</ul>
+			</section>
+			<section class="common-list" style="margin-top: 1rem;">
+				<ul>
+					<li class="group-head">
+						国标
+						<span class="rightSpan"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>国一</li>
+							<li>国二</li>
+							<li>国三</li>
+							<li>国四</li>
+							<li>国五</li>
+							<li>欧一</li>
+							<li>欧二</li>
+							<li>欧三</li>
+						</ul>
+					</section>
+					<li class="group-head">
+						颜色
+						<span class="rightSpan"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>不限</li>
+							<li>黑色</li>
+							<li>白色</li>
+							<li>红色</li>
+							<li>蓝色</li>
+							<li>银灰色</li>
+							<li>深灰色</li>
+							<li>绿色</li>
+							<li>蓝色</li>
+							<li>橙色</li>
+							<li>咖啡色</li>
+							<li>紫色</li>
+						</ul>
+					</section>
+				</ul>
+			</section>
+			<section class="car-detail" style="padding: .4rem 0;">
+				<textarea class="wenben-write" placeholder="颜色有无限制，手续齐全。。。" onkeyup="doKey()"></textarea>
+			    <p class="option-cardetail">
+			    	<span>手续齐全</span><span>车况精品</span><span>无需指标</span><span>客户急求</span><br><span>茶水丰厚</span><span>合适就秒</span><span>国四外迁</span><span>公里数少</span><br><span>外迁</span><span>无事故 无泡水</span><span>车况靓 马上秒杀</span>
+			    </p>
+			</section>
+			<!--<div class="link-user">
+				关联客户
+				<span><img src="img/add-red.png"></span>
+			</div>
+			<i class="city-tip"><span>*</span>发布成功后可在客户管理中跟进客户记录</i>-->
+		</div>
+		<!--foot-->
+		<div class="foot-tc"></div>
+		<div class="foot">
+			<span class="upload">发布急购</span>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/main.js" ></script>
+</html>

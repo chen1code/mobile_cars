@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>添加客户</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/mobiscroll.custom-2.5.0.min.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/mobiscroll.custom-2.5.0.min.js" ></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<header class="head">
+				<a class="headL" href="client-list.html"><img src="img/arrow-left.png"></a>
+				<div class="headC"><span>添加客户</span></div>
+				<a class="headR">保存</a>
+			</header>
+			<section class="add-client-body">
+				<h3>从通讯录导入</h3>
+				<div class="add-client-wrap">
+					<div class="add-client-head">用户头像选择</div>
+					<div class="achead-body">
+						<div class="achead-detailL"><span>头像</span><img /></div>
+						<div class="achead-detailR-out">
+						<div class="achead-detailR">
+							<span><img src="img/tx-test.jpg"></span>
+							<span><img src="img/47712_src.jpg"></span>
+							<span><img src="img/bg-pic.jpg"></span>
+						</div>
+						</div>
+					</div>
+					<a class="aclient-btn" style="border-right: 1px solid #F5F5F5;">从相册选择</a>
+					<a class="aclient-btn">拍照上传</a>
+				</div>
+				<div class="add-client-wrap">
+					<div class="add-client-head">用户基本信息</div>
+					<ul class="common-list">
+						<li>
+							用户姓名
+							<input type="text" placeholder="请输入用户姓名" class="rightIuput"/>
+						</li>
+						<li class="client-sex">
+							性别
+							<span>女</span>
+						     <span>男</span>
+						</li>
+						<li>联系方式<input type="text" placeholder="请输入用户手机号码" class="rightIuput" style="width: 42%;"/></li>
+					    <li class="group-head">
+					    	客户需求
+					    	<span class="rightSpan"></span>
+					    </li>
+					    <section class="group-detail hide">
+					    	<ul>
+					    		<li>买车</li><li>卖车</li><li>查违章</li><li>新车意向</li><li>分期</li><li>办保险</li>
+					    	</ul>
+					    </section>
+					    <li class="group-head">
+					    	客户等级
+					    	<span class="rightSpan"></span>
+					    </li>
+					    <section class="group-detail c-level hide">
+					    	<ul>
+					    		<li>无</li>
+					    		<li>A级</li>
+					    		<li>B级</li>
+					    		<li>C级</li>
+					    		<li>D级</li>
+					    	</ul>
+					    	<p>A：需求迫切，希望快速达成交易</p>
+					    	<p>B：需求明确，但不是特别急，可持续跟进</p>
+					    	<p>C：需求不明确，不急</p>
+					    	<p>D：很难沟通，无法联系</p>
+					    </section>
+					    <li class="group-head">客户类型<span class="rightSpan"></span></li>
+					    <section class="group-detail hide">
+					    	<ul>
+					    		<li>潜在客户</li>
+					    		<li>跟进客户</li>
+					    		<li>成交客户</li>
+					    		<li>流失客户</li>
+					    	</ul>
+					    </section>
+					</ul>
+				</div>
+				<div class="add-client-wrap">
+					<div class="add-client-head">车辆信息</div>
+					<ul class="common-list">
+						<li class="group-head">车辆品牌<span class="commonSpan"></span></li>
+						<li>车牌号码<span class="commonSpan plate">苏</span><input type="text" placeholder="请输入车牌号码" maxlength="6" class="plate-num"/></li>
+						<section class="group-detail province-simple hide">
+					    	<ul>
+					    		<li>京</li>
+					    		<li>沪</li>
+					    		<li>津</li>
+					    		<li>渝</li>
+					    		<li>冀</li>
+					    		<li>晋</li>
+					    		<li>蒙</li>
+					    		<li>辽</li>
+					    		<li>吉</li>
+					    		<li>黑</li>
+					    		<li>苏</li>
+					    		<li>浙</li>
+					    		<li>皖</li>
+					    		<li>闽</li>
+					    		<li>赣</li>
+					    		<li>鲁</li>
+					    		<li>豫</li>
+					    		<li>鄂</li>
+					    		<li>湘</li>
+					    		<li>粤</li>
+					    		<li>桂</li>
+					    		<li>琼</li>
+					    		<li>川</li>
+					    		<li>贵</li>
+					    		<li>云</li>
+					    		<li>藏</li>
+					    		<li>陕</li>
+					    		<li>甘</li>
+					    		<li>青</li>
+					    		<li>宁</li>
+					    		<li>新</li>
+					    	</ul>
+					    </section>
+					    <div class="clear"></div>
+					    <li>发动机号<input type="text" placeholder="请输入发动机号后6位" maxlength="6" style="margin-left: 2rem;"/></li>
+					    <li>发动机号<input type="text" placeholder="请输入车架号后6位" maxlength="6" style="margin-left: 2rem;"/></li>
+					</ul>
+				</div>
+				<div class="add-client-wrap">
+					<div class="add-client-head">其他信息</div>
+					<ul class="common-list">
+						<li class="group-head">客户生日<input type="text" placeholder="请选择" class="rightIuput"  id="datescroll-ac" style="margin-right: .4rem;"/></li>
+						<li>客户微信<input type="text" placeholder="请填写微信号" class="rightIuput"/></li>
+					</ul>
+					<textarea class="wenben-write" placeholder="附加信息填写" style="margin-top: 1rem;"></textarea>
+				</div>
+			</section>
+		</div>
+	</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+	$(function(){
+	        $("#datescroll-ac").mobiscroll().date();
+			
+			var currYear = (new Date()).getFullYear();  
+	
+	      	//初始化日期控件
+			var opt = {
+				preset: 'date', //日期，可选：date\datetime\time\tree_list\image_text\select
+				theme: 'android-ics light', //皮肤样式，可选：default\android\android-ics light\android-ics\ios\jqm\sense-ui\wp light\wp
+				display: 'modal', //显示方式 ，可选：modal\inline\bubble\top\bottom
+				mode: 'scroller', //日期选择模式，可选：scroller\clickpick\mixed
+				lang:'zh',
+				dateFormat: 'yyyy/mm', // 日期格式
+				setText: '确定', //确认按钮名称
+				cancelText: '取消',//取消按钮名籍我
+				dateOrder: 'yyyymm', //面板中日期排列格式
+				dayText: '日', monthText: '月', yearText: '年', //面板中年月日文字
+				showNow: false,  
+           		nowText: "今",  
+            	startYear:1990, //开始年份  
+            	endYear:currYear + 100 //结束年份  
+            	//endYear:2099 //结束年份
+			};
+			$("#datescroll-ac").mobiscroll(opt);
+	    });
+</script>
+</html>

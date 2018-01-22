@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>威车源</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		
+		<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" ></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<header class="head">
+				<!--<a class="headL"><img src="img/position.png">南京</a>-->
+				<a class="headC"><input type="text" placeholder="品牌/车系/颜色" /></a>
+				<a class="headR" href="contacter.html"><img src="img/lianxiren-white.png"></a>
+			</header>
+			<!--首页的touchslide-->
+			<div id="slideBox" class="slideBox">
+				<div class="hd hide">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<li>
+							<a><img src="img/bannner5.jpg"></a>
+						</li>
+						<li>
+							<a><img src="img/bannner4.jpg"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		    <!--工作台，核心的服务-->
+		    <section class="workDesk">
+		    	<a href="publish-car.html"><span class="back-blue"><img src="img/upload-car-white.png"/></span><p>发布车源</p></a>
+		    	<a href="city-hurrybuy.html"><span class="back-red"><img src="img/jigou-white.png"/></span><p>全网求购</p></a>
+		    	<a href="qianchu.html"><span class="back-green"><img src="img/qianchu-white.png"/></span><p>迁出代办</p></a>
+		    	<a href="guohu.html"><span class="back-orange"><img src="img/guohu-white.png" /></span><p>过户代办</p></a>
+		    </section>
+		    <!--消息翻滚-->
+		    <div class="txtScroll-top">
+		        <div class="bd">
+		        	<span class="new-msg">车动态</span>
+		            <ul class="infoList">
+		            	<li><a>赵** 刚刚发布大众捷达 2005款 捷达 1.6 手动 CIX</a></li>
+		            	<li><a>倍儿牛二手车  刚刚发布本田飞度 2008款 飞度 1.5 手动 型动派 标准版</a></li>
+		            	<li><a>威迩车行 急购斯巴鲁傲虎 2006款 3.0 自动(进口)</a></li>
+		            </ul>
+		        </div>
+		    </div>
+		    <section class="car-msg">
+		    	<a href="mySource.html"><p><img src="img/car-green.png">我的车源</p>
+		    	   <p class="nobuyer">车源暂无新得买主</p>
+		    	   <p class="hasbuyer hide">您的车源有新买主</p>
+		    	   <span class="car-msg-num">1</span>
+		    	</a>
+		    	<a href="mySource.html"><p><img src="img/jibuy-green.png">我的求购</p>
+		    	   <p class="nobuyer">求购暂无新车源上架</p>
+		    	   <p class="hasbuyer hide">您的求购有新车源</p>
+		    	</a>
+		    </section>
+		    <section class="more-service">
+		    	<p class="little-title">更多服务</p>
+		    	<div id="slideBox2" class="slideBox">
+				<div class="hd">
+					<ul>
+						
+					</ul>
+				</div>
+				<div class="bd">
+					<ul> 
+						<li>
+							<a><img src="img/car-gujia.png"><p>车辆估价</p></a>
+							<a><img src="img/xianqian.png"><p>限迁查询</p></a>
+							<a><img src="img/weizhang.png"><p>违章查询</p></a>
+							<a><img src="img/baoyang.png"><p>保养记录</p></a>
+							<a href="client-list.html"><img src="img/kehu-manage-blue.png"><p>客户管理</p></a>
+							<a><img src="img/nianshen.png"><p>年审代办</p></a>
+							<a><img src="img/chedai.png"><p>车贷管理</p></a>
+							<a><img src="img/fenqidai.png"><p>分期贷</p></a>
+						</li>
+						<li>
+							<a><img src="img/car-gujia.png"><p>更多1</p></a>
+							<a><img src="img/xianqian.png"><p>更多2</p></a>
+							<a><img src="img/weizhang.png"><p>更多3</p></a>
+							<a><img src="img/baoyang.png"><p>更多4</p></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		    </section>
+		</div>
+		
+		<!--foot-->
+		<div class="foot-tc"></div>
+		<div class="foot">
+			<a class="first-page active"  href="index.html"><b class="active"></b><p>首页</p></a>
+			<a class="search-car" href="search-car.html"><b></b><p>搜车</p></a>
+			<a class="message" href="message.html"><b></b><p>消息</p></a>
+			<a class="mine" href="myCenter.html"><b></b><p>我的</p></a>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		TouchSlide({
+			slideCell: "#slideBox",
+			titleCell:".hd ul",
+			mainCell: ".bd ul",
+			effect: "leftLoop",
+			autoPlay: true, //自动播放
+			autoPage: true, //自动分页
+		});
+		
+		//文字
+		jQuery(".txtScroll-top").slide({
+			titCell:".hd ul",
+			mainCell:".bd ul",
+			autoPage:true,
+			effect:"top",
+			autoPlay:true,
+			vis:1});
+        //更多服务
+        TouchSlide({
+			slideCell: "#slideBox2",
+			titCell:".hd ul",
+			mainCell: ".bd ul",
+			effect: "leftLoop",
+			autoPage: true, //自动分页
+		});
+	</script>
+
+</html>
+
+
+
+
+ 

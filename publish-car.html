@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>发布车源</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/mobiscroll.custom-2.5.0.min.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/mobiscroll.custom-2.5.0.min.js" ></script>
+	</head>
+	<style>
+		.foot{ background-color: #F6F6F6; line-height: 3rem; text-align: center;}
+	</style>
+	
+	<body>
+		<div id="wrap">
+			<header class="head">
+				<a class="headL" href="index.html"><img src="img/arrow-left.png"></a>
+				<div class="headC"><span>发布车源</span></div>
+				<!--<a class="headR share-other">同步设置</a>-->
+			</header>
+			<div class="jb-head">选择车型一键上传图片/拍照上传</div>
+			<section class="upload-source">
+				<div class="upload-source-out">
+				<div class="pic-block"></div>
+				<p>请至少上传4张图片</p>
+				</div>
+			</section>
+			<section class="car-detail">
+				<div class="jb-head">车辆信息（必填）</div>
+				<ul class="common-list">
+					<li class="group-head">
+						车型信息
+						<span class="rightSpan"></span>
+					</li>
+					<li class="group-head">
+						所在城市
+					</li>
+					<li>
+						表显里程
+						<span class="rightSpan" style="margin: 0; width: 20%;">万公里</span>
+						<input type="text" placeholder="请输入" class="rightIuput" style="margin-right: -1rem;"/>
+					</li>
+					<li class="group-head">
+						上牌时间
+						<input type="text" placeholder="选择日期" class="rightIuput"  id="datescroll" style="margin-right: .4rem;"/>
+					</li>
+				</ul>
+			</section>
+			<section class="car-detail">
+				<div class="jb-head">车辆价格（必填）</div>
+				<ul class="common-list price">
+					<li>
+						是否带指标
+						<span>不带指标</span>
+						<span>带指标</span>
+					</li>
+					<li>
+						零售价格
+						<span class="rightSpan" style="margin: 0; border: none; padding: 0; width: 16%;">万元</span>
+						<input type="text" placeholder="请输入" class="rightIuput" style="margin-right: -1rem;"/>
+					</li>
+					<li>
+						是否可批
+						<span>不可批</span>
+						<span>可批</span>
+					</li>
+				</ul>
+			</section>
+			<section class="car-detail">
+				<div class="jb-head">其他信息</div>
+				<ul class="common-list">
+					<li class="group-head">
+						变速箱
+						<span class="rightSpan"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>手动挡</li>
+							<li>自动挡</li>
+							<li>手自一体</li>
+							<li>无级变速</li>
+						</ul>
+					</section>
+					<li class="group-head">
+						国标
+						<span class="rightSpan"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>国一</li>
+							<li>国二</li>
+							<li>国三</li>
+							<li>国四</li>
+							<li>国五</li>
+							<li>欧一</li>
+							<li>欧二</li>
+							<li>欧三</li>
+						</ul>
+					</section>
+					<li class="group-head">
+						颜色
+						<span class="rightSpan"></span>
+					</li>
+					<section class="group-detail hide">
+						<ul>
+							<li>不限</li>
+							<li>黑色</li>
+							<li>白色</li>
+							<li>红色</li>
+							<li>蓝色</li>
+							<li>银灰色</li>
+							<li>深灰色</li>
+							<li>绿色</li>
+							<li>蓝色</li>
+							<li>橙色</li>
+							<li>咖啡色</li>
+							<li>紫色</li>
+						</ul>
+					</section>
+				</ul>
+				<textarea class="wenben-write" placeholder="请输入车辆描述" style="margin-top: 1rem;"></textarea>
+			</section>
+			<section class="car-detail">
+				<div class="jb-head">备注信息(仅自己可见)</div>
+				<ul class="common-list">
+					<li>
+					    车牌号码
+					    <input type="text" placeholder="输入车牌号" class="rightIuput"/>
+					</li>
+					<li>
+					    发动机号
+					    <input type="text" placeholder="输入发动机号后6位" class="rightIuput"/>
+					</li>
+					<li>
+					    车架号码
+					    <input type="text" placeholder="输入车架号码后6位" class="rightIuput"/>
+					</li>
+				</ul>
+			</section>
+		</div>
+		
+		<!--foot-->
+		<div class="foot-tc"></div>
+		<div class="foot">
+			<span class="upload">发布车源</span>
+		</div>
+		
+		
+	</body>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/mobiscroll.custom-2.5.0.min.js" ></script>
+    <script>
+		//日期
+ $(function(){
+	        $("#datescroll").mobiscroll().date();
+			
+			var currYear = (new Date()).getFullYear();  
+	
+	      	//初始化日期控件
+			var opt = {
+				preset: 'date', //日期，可选：date\datetime\time\tree_list\image_text\select
+				theme: 'android-ics light', //皮肤样式，可选：default\android\android-ics light\android-ics\ios\jqm\sense-ui\wp light\wp
+				display: 'modal', //显示方式 ，可选：modal\inline\bubble\top\bottom
+				mode: 'scroller', //日期选择模式，可选：scroller\clickpick\mixed
+				lang:'zh',
+				dateFormat: 'yyyy/mm', // 日期格式
+				setText: '确定', //确认按钮名称
+				cancelText: '取消',//取消按钮名籍我
+				dateOrder: 'yyyymm', //面板中日期排列格式
+				dayText: '日', monthText: '月', yearText: '年', //面板中年月日文字
+				showNow: false,  
+           		nowText: "今",  
+            	startYear:1990, //开始年份  
+            	endYear:currYear + 100 //结束年份  
+            	//endYear:2099 //结束年份
+			};
+			$("#datescroll").mobiscroll(opt);
+	    });
+	</script>
+</html>

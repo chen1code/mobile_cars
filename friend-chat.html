@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>好友消息</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<header class="head">
+				<a class="headL" href="message.html"><img src="img/arrow-left.png"></a>
+				<div class="headC"><span>nickname</span></div>
+			</header>
+			<div class="dialog-out">
+				<p class="time-block">2016/12/6 11:45</p>
+				<div class="chat-left">
+					<div class="user-tx"><img src="img/tx-test.jpg"></div>
+					<p>nickname</p>
+					<div class="dialog-box">
+						hellow! guys,我是威迩卡斯的机器人，小威，合作愉快
+						<div class="triangle"></div>
+					</div>
+				</div>
+				<div class="chat-right">
+					<div class="user-tx-r"><img src="img/tx-test.jpg"></div>
+					<p>nickname</p>
+					<div class="dialog-box">
+						hellow! guys,我是威迩卡斯的机器人，小威，合作愉快
+						<div class="triangle-r"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部对话输入框-->
+		<div class="foot-tc" style="height: 4.2rem;"></div>
+		<div class="dialog-foot">
+			<p><input type="text" class="write-msg" onkeyup="putText()" /><span class="send-msg">发送</span><img src="img/clear-text.png" class="clear-text hide"></p>
+			<a><img src="img/yuyin.png"></a>
+			<a><img src="img/dialog-pic.png"></a>
+			<a><img src="img/camery.png"></a>
+			<a><img src="img/biaoqing.png"></a>
+			<a><img src="img/add-circle.png"></a>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/main.js"></script>
+<script>
+	window.onload=function(){
+	$('html,body').animate({scrollTop:$('.foot-tc').offset().top}, 800);
+}
+</script>
+
+</html>
